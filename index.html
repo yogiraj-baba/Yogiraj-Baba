@@ -1,49 +1,71 @@
-<head>
-	<title>Google Homepage</title>
-	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-</head>
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  h1, h2{
+      text-align: center;
+      color:rgb(6, 6, 32);
+  }
+  body{
+      border:7px solid rgb(6, 6, 32);
+  }
+  .Profilepic{
+    margin: auto;
+    max-width: 300px;
+    border-radius: 80%;
+    align-content: right;
+    align-items: right;
+    justify-items: right;
+    justify-content: right;
+  }
+  button{
+    margin: auto;
+    padding: auto;
+    width: 25;
+    position: relative;
+    display:flex;
+    block-height:100px;
+    block-width:100px;
+    background-color: rgb(6, 6, 32);
+  }
+  div .links{
+  display: flexbox;
+  flex-direction: row;
+  text-decoration:none;
+  }
+  
+  button .img{
+    max-width: 50px;
+    border: 5px;
+  }
+  
+  .Profile{
+   display: flex;
+   background:rgb(127, 196, 219);
+   flex-direction: column;
+  
+  }
+  label{
+    background: rgb(6, 6, 32);
+    color: white;
+    block-size: 22px;
+    width: 100%;
+  }
+  table, th, td{
+    border: 1px solid black;
+    border-collapse: collapse;
+    text-align: center;
+  }
+  th{
+    background: darkcyan;
+  }
+  a{
+      font-size: 20px;
+      color:white;
 
-<body>
-	<header>
-		<nav>
-			<ul id="nav_bar">
-				<li class="nav-links" id="gmail"><a href="#">Gmail</a></li>
-				<li class="nav-links"><a href="#">Images</a></li>
-				<li id="sign_in"><a href="#">Sign In</a></li>
-			</ul>  
-		</nav>  
-	</header>  
-	
-	<!-- GOOGLE IMG -->  
-	<div class="google">
-		<a href="#" id="google_logo"><img src="http://i1381.photobucket.com/albums/ah215/mzartdesigns/google-logo_zpspkcztsjo.png" alt=" photo google-logo_zpspkcztsjo.png"/></a>
-	</div>
-	
-	<!-- FORM SEARCH -->  
-	<div class="form">  
-		<form>
-			<label for="form-search"></label>
-			<input type="text" id="form-search" placeholder="Search Google or type URL">
-		</form>
-	</div>  
-	
-	<!-- BUTTONS -->
-	<div class= "buttons">  
-		<input type="submit" value="Google Search" id="google_search">
-		<input type="submit" value="I'm Feeling Lucky" id="im_feeling_lucky">
-	</div>
-		
-	<!-- FOOTER -->
-	<footer>
-			<ul class="footer-left">
-				<li><a href="#">Advertising</a></li>
-				<li><a href="#">Business</a></li>
-				<li><a href="#">About</a></li> 
-			</ul>
-			<ul class="footer-right">    
-				<li><a href="#">Privacy</a></li>
-				<li><a href="#">Terms</a></li>
-				<li><a href="#">Settings</a></li>
-			</ul>       
-	</footer>      
-</body>
+  }
+  a:hover{
+      color:aqua;
+  }
